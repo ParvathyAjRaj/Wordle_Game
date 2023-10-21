@@ -29,7 +29,6 @@ function check_word(word)  {
 var attempt = 0;
 var game_over = false;
 var challenge_word = get_word()
-console.log("Challenge is",challenge_word);
 
 function prompt_event() {
     i = attempt + 1
@@ -47,7 +46,6 @@ function prompt_event() {
     }
 
     var choice = prompt("Enter your choice");
-    console.log("choice is ",choice)
     var row_num = "#row"+i;
     map = check_word(choice);
     console.log(map);
@@ -78,6 +76,6 @@ function prompt_event() {
     
 }
 
-document.addEventListener("keydown", prompt_event)
+document.addEventListener("click", prompt_event)
 
 
