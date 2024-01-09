@@ -11,5 +11,7 @@ that particular block will be having green background colour.<br>
 Case 2 => If any letter of your guessed word is present in answer, but you haven't figured out the right position, 
 then that particular block will be having yellow background colour.<br>
 Case 3 => Rest will be having gray background colour.
+
+Link : You can play the Wordle Game by clicking [here](https://parvathyajraj.github.io/Wordle_Game/)
              
 
