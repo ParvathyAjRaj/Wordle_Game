@@ -31,7 +31,7 @@ var game_over = false;
 var challenge_word = get_word()
 
 function prompt_event() {
-    i = attempt + 1
+    i = attempt + 1;
 
     // exit conditions
     if (i >= 6 && game_over==false){
@@ -46,9 +46,14 @@ function prompt_event() {
     }
 
     var choice = prompt("Enter your choice");
+
+    if(wordList.includes(choice)==false){
+        alert("No such word!")
+        return
+    }
+
     var row_num = "#row"+i;
     map = check_word(choice);
-    console.log(map);
     for (var j=0;j<5;j++){
         var k =j+1;
         var col_num = "#col"+k;
