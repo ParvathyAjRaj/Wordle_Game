@@ -28,14 +28,14 @@ function check_word(word)  {
 
 var attempt = 0;
 var game_over = false;
-var challenge_word = get_word()
+var challenge_word = get_word();
 
 function prompt_event() {
     i = attempt + 1;
 
     // exit conditions
     if (i >= 6 && game_over==false){
-        alert("game over. The word is " + challenge_word+ " refresh now!")
+        alert("game over. The word is " + challenge_word+ " refresh now!");
         return
     }
 
@@ -66,17 +66,9 @@ function prompt_event() {
     if (challenge_word == choice){
         var element = document.querySelector(row_num);
         element.style.backgroundColor = "green"
-        game_over = true
+        game_over = true; 
     }
 
-    if(game_over==true){
-        alert("you won!")
-    }
-
-    
-
-    
-    
     attempt += 1
     
 }
